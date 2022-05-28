@@ -1,1 +1,6 @@
 logdive/logs
+
+*.db
+*.db-journal
+
+venv
