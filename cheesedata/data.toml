@@ -1,0 +1,86 @@
+[ice_highway]
+
+  [ice_highway.appleway]
+
+    [ice_highway.applyway.points.entrance]
+    desc = "entrance from apple",
+    loc = {x = -15513, y = 69, z = 12998},
+    links = ["entrance_split"]
+
+    [ice_highway.applyway.points.entrance_split]
+    id = "entrance_split",
+    loc = {x = -15513, y = 69, z = 13868}
+    links = ["entrance_split"]
+
+    [ice_highway.applyway.points.ethan_split]
+    id = "ethan_split",
+    loc = {x = -16020, y = 69, z = 13868}
+    links = ["entrance_split"]
+
+    [ice_highway.applyway.points.ethan]
+    id = "ethan",
+    loc = {x = -16020, y = 69, z = 13807}
+    links = ["ethan_split"]
+
+    [ice_highway.applyway.points.village_turn]
+    id = "village_turn",
+    loc = {x = -16020, y = 69, z = 13894}
+    links = ["ethan_split"]
+
+    [ice_highway.applyway.points.village]
+    id = "village",
+    loc = {x = -16036, y = 69, z = 13894}
+    links = ["ethan_split"]
+
+    [ice_highway.applyway.points.long_split]
+    id = "long_split",
+    loc = {x = -14910, y = 69, z = 13868}
+    links = ["entrance_split"]
+
+  [ice_highway.sandway]
+
+  [ice_highway.koalaway]
+
+[portal_desti]
+
+  [portal_desti.apple]
+  links = ["koala", "pool", "spawn", "spice"]
+
+  [portal_desti.chicken]
+  links = ["lemon"]
+
+  [portal_desti.kiwi]
+  links = ["pear"]
+
+  [portal_desti.koala]
+  links = ["apple"]
+
+  [portal_desti.lemon]
+  links = ["chicken", "sandcastle"]
+
+  [portal_desti.mango]
+  links = ["pear"]
+
+  [portal_desti.nitland]
+  links = ["sandcastle"]
+
+  [portal_desti.oasis]
+  links = ["spawn"]
+
+  [portal_desti.pear]
+  links = ["kiwi", "mango", "sandcastle"]
+
+  [portal_desti.pool]
+  links = ["apple"]
+
+  [portal_desti.sandcastle]
+  links = ["lemon", "nitland", "pear", "spawn"]
+
+  [portal_desti.spawn]
+  links = ["apple", "oasis", "sandcastle", "tower"]
+
+  [portal_desti.spice]
+  links = ["apple"]
+
+  [portal_desti.tower]
+  links = ["spawn"]
