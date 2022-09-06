@@ -1,6 +1,10 @@
 logdive/logs
 
+plugin-bin
+
 *.db
 *.db-journal
 
 venv
+
+*.swp
